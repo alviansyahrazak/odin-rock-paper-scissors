@@ -1,4 +1,4 @@
-alert("welcome, this is a simple game of rock, paper, and scissors, this game has 5 rounds of play (see the console for results)")
+alert("welcome, this is a simple game of rock, paper, and scissors, this game has 5 rounds of play (The game will start in 5 seconds, please open devtools and see the console for results)")
 
 let humanScore = 0
 let computerScore = 0
@@ -53,13 +53,15 @@ const playRound = (humanChoice, computerChoice) => {
 }
 
 const playGame = () => {
+    setTimeout( function() {
     for(i = 1; i <= 5; i++) {
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
-    console.log(playRound(humanSelection, computerSelection))
-    }
-    console.log("human score" + " " + humanScore)
-    console.log("computer score" + " " + computerScore)
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        console.log(playRound(humanSelection, computerSelection))
+        }
+        console.log("human score" + " " + humanScore)
+        console.log("computer score" + " " + computerScore)
+    }, 5000)
 }
 
 playGame()
