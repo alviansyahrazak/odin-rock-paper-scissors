@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Rock, Paper, Scissors</title>
+    <title>Odin Rock, Paper, Scissors RPS-UI</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="header">
+            <h1>Odin Rock, Paper, Scissors Games</h1>
+            <br>
+            <h3>Round : <span id="round_count_span"></span></h3>
+        </div>
+
+        <div class="score">
+            <div >Player Score : <span id="player_score_span"></span></div>
+            <div >Computer Score : <span id="computer_score_span"></span></div>
+        </div>
+
+        <div class="message">
+            <div id="message"></div>
+        </div>
+
+        <div class="choice_buttons_wrapper">
+            <button class="rock" id="rock_btn">Rock</button>
+            <button class="paper" id="paper_btn">Paper</button>
+            <button class="scissors" id="scissors_btn">Scissors</button>
+        </div>
+        <div class="reset_button_wrapper hidden">
+            <button id="reset_game_btn">Play Again?</button>
+        </div>
+    </di>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
